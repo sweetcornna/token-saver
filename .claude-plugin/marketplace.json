@@ -1,0 +1,17 @@
+{
+  "name": "token-saver",
+  "owner": {
+    "name": "token-saver contributors"
+  },
+  "plugins": [
+    {
+      "name": "token-saver",
+      "source": "./plugin",
+      "description": "Fewer round trips for Claude Code coding tasks via a single static output style.",
+      "version": "0.2.0"
+    }
+  ],
+  "metadata": {
+    "description": "token-saver: a single output-style plugin that reduces Claude Code round trips."
+  }
+}

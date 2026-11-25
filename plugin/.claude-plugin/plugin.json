@@ -1,0 +1,15 @@
+{
+  "name": "token-saver",
+  "version": "0.2.0",
+  "description": "Same coding behaviour, fewer round trips: one static output style that batches independent read-only steps and edits, avoids re-reading unchanged output, and stops once the fix is verified. No hooks, MCP servers, skills or agents.",
+  "author": {
+    "name": "token-saver contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cost",
+    "tokens",
+    "output-style",
+    "efficiency"
+  ]
+}
