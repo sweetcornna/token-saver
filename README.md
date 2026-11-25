@@ -37,12 +37,12 @@ Paired experiment, 2026-11-25. Setup: `claude-haiku-5-5` at `max` effort, Claude
 | Comparison (81 aligned tasks) | Cost ratio (95% task-bootstrap CI) | Resolved |
 |---|---|---|
 | this plugin vs. native Claude Code | 0.590 (0.537–0.652); cheaper on 74/81 tasks | 64/81 → 66/81 |
-| an empty plugin wrapper vs. native | 0.660 (0.602–0.724) | 65/82 → 67/82 |
-| this plugin vs. the empty wrapper | 0.894 (0.83–0.97) | 66/81 → 66/81 |
+| delivery wrapper only (`shell`) vs. native | 0.660 (0.602–0.724) | 65/82 → 67/82 |
+| this plugin vs. `shell` | 0.894 (0.83–0.97) | 66/81 → 66/81 |
 
 How to read it:
 
-- About two thirds of the drop also appears with an empty plugin wrapper that carries no instructions. The instructions add roughly another 10% on top of that.
+- About two thirds of the drop already appears with the `shell` control arm. `shell` is the same plugin with only the heading and one sentence of the style: "Every tool call re-sends the whole conversation, so the number of round trips drives the cost of a task. Work the same way you normally would." Loading any output style also makes Claude Code swap one identity sentence in its system prompt. This run cannot separate the effect of that swap from the effect of the cost sentence. The four habits add roughly another 10% on top of `shell`.
 - The run's pre-registered mechanism gate failed. The plugin cut main-thread requests to 0.44× of native, but output per request rose to 1.74×, above the frozen 1.15× limit. Usage was also missing for 2.47% of the plugin's sessions, above the 2% data-quality limit.
 - Treat the cost numbers as descriptive. This is a single run on one model and one task family. Results on other models, effort levels or task types are untested.
 
@@ -73,6 +73,6 @@ MIT
 
 结果：
 - 本插件对原生 Claude Code 的费用比是 0.590，95% 区间 0.537–0.652。81 题里 74 题更便宜，解决数从 64/81 变成 66/81。
-- 其中约三分之二的降幅来自不带任何指令的空插件外壳（空外壳对原生是 0.660）。指令本身在外壳之上再降约 10%（本插件对空外壳是 0.894，区间 0.83–0.97）。
+- 其中约三分之二的降幅在对照臂 `shell` 上就已经出现（`shell` 对原生是 0.660）。`shell` 是同一个插件，只保留标题和一句话：“每次工具调用都会重发整段对话，所以往返次数决定任务成本；照常工作。”加载任何 output style 时，Claude Code 还会替换系统提示里的一句身份描述。这次运行分不开这两者各自的作用。四条习惯在 `shell` 之上再降约 10%（本插件对 `shell` 是 0.894，区间 0.83–0.97）。
 - 这次运行预注册的机制门槛没有通过：主线程请求数降到原生的 0.44 倍，但每次请求的输出升到 1.74 倍，超过冻结的 1.15 倍上限。另外有 2.47% 的会话用量缺失，超过 2% 的数据质量上限。
 - 换别的模型、推理强度或任务类型的效果都还没有测过。
