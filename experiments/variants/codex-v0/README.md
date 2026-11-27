@@ -25,5 +25,3 @@ Not run. Kept for reference; see the status above.
 ```bash
 # paste developer_instructions.md into developer_instructions in your Codex config
 ```
-
-The marketplace installs only the released `plugin/`. This directory is kept byte-for-byte as tested (tests and internal notes removed); the plugin name inside `plugin.json` may clash with an installed token-saver, so use `--plugin-dir` for a single session.

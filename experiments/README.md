@@ -1,12 +1,12 @@
 # Experiment library
 
-Every token-saver variant and every outside method that went through the same paired SWE-bench Verified harness, with its scores. The marketplace installs only the released style in [`plugin/`](../plugin/) (0.2.0, called `111` below). Nothing in this directory replaces it.
+Paired SWE-bench Verified results for token-saver variants and outside methods. The marketplace installs the released style in [`plugin/`](../plugin/) (0.2.0, called `111` below).
 
 本目录收录所有做过配对评测的 token-saver 消融版本和外部方法，附各自的成绩，按综合成绩从高到低排列。中文说明见文末。
 
 - 33 variants of our own (5 more were built but never run) and 7 outside methods; 72 variant × run results from 24 runs between 2026-11-08 and 2026-11-27.
 - Tables: [leaderboard by variant](#leaderboard-by-variant), [all results](#all-results-variant--run), [runs](#runs). Machine-readable: [`leaderboard.csv`](leaderboard.csv).
-- Each variant's files and results: [`variants/<name>/`](variants/). Each run's setup, arms, results and outcome: [`runs/`](runs/). Per-task results of the seven runs since 2026-11-25: [`data/`](data/).
+- Variant files and results are in [`variants/`](variants/). Run settings, arms and outcomes are in [`runs/`](runs/). Seven runs have [per-task CSVs](data/).
 
 ## Composite score
 
@@ -165,7 +165,7 @@ Sorted by score. *Evidence*: **held-out** = tasks never used during development;
 
 ## Runs
 
-All runs use SWE-bench Verified tasks, one fresh session per task × arm × repetition, the same model and effort on both arms, arms interleaved task by task, no internet access, and the official SWE-bench evaluation. Cost comes from the per-request usage ledger at fixed list-style prices; it is not an invoice.
+All runs use SWE-bench Verified tasks, one fresh session per task × arm × repetition, the same model and effort on both arms, arms interleaved task by task, no internet access, and the official SWE-bench evaluation. Cost is estimated from per-request usage at fixed prices, with gateway list-price estimates marked [h].
 
 | Run | Date | Model (effort) | Claude Code | Task set | Tasks × reps | Variants | Record | Per-task data |
 |---|---|---|---|---|---|---|---|---|
@@ -210,10 +210,10 @@ experiments/
   leaderboard.csv    all results, one row per variant × run
   variants/<name>/   tested files and that variant's results
   runs/<run>.md      setup, arms, results and outcome of each run
-  data/<run>.csv     per-task results (runs since 2026-11-25)
+  data/<run>.csv     per-task results for seven runs
 ```
 
-To try a variant for one session: `claude --plugin-dir experiments/variants/<name>`.
+From the repository root, load a Claude Code plugin variant for one session with `claude --plugin-dir experiments/variants/<name>`. For the released `111` variant, use `claude --plugin-dir ./plugin`. The [`appendCost`](variants/appendCost/) and [`noAgent`](variants/noAgent/) pages give their command-line flags. The [`codex-v0`](variants/codex-v0/) page contains the Codex instructions.
 
 ---
 
@@ -230,4 +230,6 @@ To try a variant for one session: `claude --plugin-dir experiments/variants/<nam
 - 没有一个版本在留出题上证明了解决率不变差。证据最强的是 deepseek 上的 `F2bOnly`：98 道未用过的题 × 4 次，费用 0.696（0.616–0.776），但解决率低 2.6 个百分点，3 点与 5 点非劣效都没建立。
 - 发布版本不是按这个排名选的，也不因排名替换。
 
-**目录**：`variants/<名称>/` 是测试时的原样文件与该版本的全部成绩；`runs/` 是各批次的设置、臂、结果与结论；`data/` 是 2026-11-25 以来 7 个批次的逐题结果（不含会话日志、请求账本与服务器信息）；`leaderboard.csv` 是全部结果。单次试用：`claude --plugin-dir experiments/variants/<名称>`。
+[版本目录](variants/)收录实验文件和成绩，[批次记录](runs/)列出设置、实验臂和结论，[逐题数据](data/)覆盖七个批次，[成绩 CSV](leaderboard.csv)收录所有排名条目。
+
+从仓库根目录用 `claude --plugin-dir experiments/variants/<名称>` 单次加载 Claude Code 实验插件。发布版 `111` 使用 `claude --plugin-dir ./plugin`。[`appendCost`](variants/appendCost/)和[`noAgent`](variants/noAgent/)各自列出启动参数，[`codex-v0`](variants/codex-v0/)提供 Codex 指令文件。

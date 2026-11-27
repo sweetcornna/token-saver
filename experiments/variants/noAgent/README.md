@@ -29,5 +29,3 @@ No files: this arm is a command-line setting.
 ```bash
 claude --disallowedTools Agent Task
 ```
-
-The marketplace installs only the released `plugin/`. This directory is kept byte-for-byte as tested; the plugin name inside `plugin.json` may clash with an installed token-saver, so use `--plugin-dir` for a single session.

@@ -37,5 +37,3 @@ Every tool call re-sends the whole conversation, so the number of round trips dr
 ```bash
 claude --append-system-prompt "$(cat experiments/variants/appendCost/cost.txt)"
 ```
-
-The marketplace installs only the released `plugin/`. This directory is kept byte-for-byte as tested; the plugin name inside `plugin.json` may clash with an installed token-saver, so use `--plugin-dir` for a single session.

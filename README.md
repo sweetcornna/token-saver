@@ -72,7 +72,7 @@ Results on other models, effort levels or task types are untested.
 
 ## Experiment library
 
-[`experiments/`](experiments/README.md) is a public record of every variant we tested: 33 of our own variants and 7 outside methods, 72 variant × run results from 24 runs, each with its tested files, run setup and outcome, and per-task data for the runs since 2026-11-25. Variants are ranked by a composite score, the saving in cost per resolved task against native Claude Code in the same run. The ranking is descriptive: it does not weigh how many runs or tasks stand behind a score, and no variant has established quality non-inferiority on held-out tasks. The marketplace does not install any of these variants, and none of them replaces the released style.
+The [experiment library](experiments/README.md) ranks 33 tested variants and 7 outside methods using 72 results from 24 paired runs. Each entry links to its scores and run setup. The library includes our tested variant files, summaries for outside methods, and [per-task CSVs for seven runs](experiments/data/). The composite score measures the saving in cost per resolved task against native Claude Code in the same run. The ranking gives each run equal weight, and quality non-inferiority remains unestablished on held-out tasks. The marketplace installs version 0.2.0.
 
 ## References
 
@@ -110,5 +110,5 @@ MIT
 
 ### 实验库与参考文献
 
-- 实验库在 `experiments/`：全部 33 个自有消融版本与 7 个外部方法、72 条“版本 × 批次”结果，各版本附测试时的原样文件与成绩，按综合成绩（同批相对原生的每解出一题费用节省率）从高到低排列；2026-11-25 以来的 7 个批次附逐题数据。排名只作描述，不计样本量，也没有版本在留出题上证明质量不变差。marketplace 不安装这些版本，也不替换发布版本。
+- [公开实验库](experiments/README.md)收录 33 个已测自有版本、7 个外部方法和 24 批的 72 条成绩，附自有版本的实验文件、外部方法的复测摘要和[七批逐题 CSV](experiments/data/)。综合成绩按同批相对原生的每解出一题费用节省率计算，每批等权。留出题上的质量非劣效尚未建立。marketplace 安装 0.2.0。
 - 设计和评测时参考的论文（附 DOI）见 `REFERENCES.md`，BibTeX 见 `references.bib`。
