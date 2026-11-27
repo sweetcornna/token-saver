@@ -1,0 +1,73 @@
+rank,score,variant,type,status,run,date,model,effort,claude_code,task_set,tasks,reps,cost_ratio,ci_low,ci_high,resolved_native,resolved_variant,resolved_denominator,resolved_unit,delta_pp,evidence,flags,note
+1,48.41,F2b_m1,plugin,screen only,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.4729,0.3252,0.6391,36,33,40,count,-7.50,screen ×1,e,10%-trimmed 0.57; ~40% of the gap from one task
+2,42.79,111,plugin,released 0.2.0,s1-haiku,2026-11-25,claude-haiku-5-5,max,2.1.323,dev-82,82,1,0.59,0.537,0.652,64,66,81,count,2.47,screen ×1,c,released 0.2.0
+3,42.66,F2bOnly,plugin,candidate (deepseek),s1d-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,3,0.5853,0.5212,0.6526,193,197,240,count,1.67,dev ×3,,
+4,41.97,v1a-brief,plugin,rejected,ccb5,2026-11-08,deepseek-v4.1-flash,max,2.1.319,dev-97,97,2,0.568,0.397,0.807,75.3,73.7,100,percent,-1.50,dev ×2,h,
+5,40.58,v0-notes,plugin,inconclusive,seq1,2026-11-10,deepseek-v4.1-flash,max,2.1.319,django-seq-61,61,2,0.571,,,84.4,81.1,100,percent,-3.30,dev ×2,,vs v0: 0.917 (0.752–1.115)
+6,40.32,v0,plugin,previous release 0.1.0,lunamax1,2026-11-12,gpt-6-luna,max,2.1.319,fixed-60,60,2,0.624,0.419,0.971,72.5,75.8,100,percent,3.30,dev ×2,d,
+7,38.62,v2-stop-gate,plugin,rejected,dt1,2026-11-10,deepseek-v4.1-flash,xhigh,2.1.319,fixed-60,60,2,0.646,0.521,0.786,80,84.2,100,percent,4.20,dev ×2,,gate changed code after firing in 2/120 sessions
+8,37.51,111D,plugin,not advanced,s1-haiku,2026-11-25,claude-haiku-5-5,max,2.1.323,dev-82,82,1,0.6345,0.565,0.706,65,66,82,count,1.22,screen ×1,a,
+9,37.25,v0,plugin,previous release 0.1.0,ccb4,2026-11-08,deepseek-v4.1-flash,max,2.1.319,dev-97,97,2,0.64,0.517,0.793,75.3,76.8,100,percent,1.50,dev ×2,h,
+10,37.20,v0,plugin,previous release 0.1.0,seq1,2026-11-10,deepseek-v4.1-flash,max,2.1.319,django-seq-61,61,2,0.622,0.532,0.719,84.4,83.6,100,percent,-0.80,dev ×2,,
+11,36.39,000D,plugin,not advanced,s1-haiku,2026-11-25,claude-haiku-5-5,max,2.1.323,dev-82,82,1,0.6752,0.603,0.757,65,69,82,count,4.88,screen ×1,a,
+12,35.97,shell,plugin,control,s1-haiku,2026-11-25,claude-haiku-5-5,max,2.1.323,dev-82,82,1,0.66,0.602,0.724,65,67,82,count,2.44,screen ×1,,
+13,35.38,F2bOnly,plugin,candidate (deepseek),s1c-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,2,0.6309,0.5586,0.7076,127,124,160,count,-1.87,dev ×2,,
+14,35.32,F2bSuite,plugin,rejected,s1d-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,3,0.623,0.5355,0.7124,190,183,237,count,-2.95,dev ×3,,
+15,34.54,v0,plugin,previous release 0.1.0,dt3,2026-11-10,deepseek-v4.1-flash,xhigh,2.1.319,fixed-60,60,2,0.683,0.552,0.869,78.3,81.7,100,percent,3.30,dev ×2,,
+16,34.44,F2bTail,plugin,rejected,s1d-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,3,0.659,0.6014,0.7152,193,194,240,count,0.42,dev ×3,,
+17,34.25,v1b-budget,plugin,not confirmed,ccb5,2026-11-08,deepseek-v4.1-flash,max,2.1.319,dev-97,97,2,0.675,0.566,0.809,75.3,77.3,100,percent,2.10,dev ×2,h,
+18,32.66,010,plugin,superseded by F2bOnly,s1c-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,2,0.6787,0.6013,0.7608,127,128,162,count,0.62,dev ×2,,
+19,32.30,v0,plugin,previous release 0.1.0,dt1,2026-11-10,deepseek-v4.1-flash,xhigh,2.1.319,fixed-60,60,2,0.677,0.546,0.805,80,80,100,percent,0.00,dev ×2,,
+20,32.11,v0,plugin,previous release 0.1.0,ccb8,2026-11-10,deepseek-v4.1-flash,max,2.1.319,dev-97,97,2,0.669,0.562,0.769,75.8,74.7,100,percent,-1.00,dev ×2,,
+21,30.29,F2only,plugin,superseded by F2bOnly,s1c-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,2,0.675,0.5909,0.7598,126,122,160,count,-2.50,dev ×2,,
+22,30.13,K_synth_m1,plugin,screen only,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.7336,0.5646,0.9588,20,21,28,count,3.57,screen ×1,,
+23,28.62,styleEmpty,plugin,control,s1d-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,3,0.7026,0.6368,0.7848,191,188,237,count,-1.27,dev ×3,,
+24,28.60,001,plugin,not advanced,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,0.736,0.635,0.844,65,67,82,count,2.44,screen ×1,b,
+25,28.12,F2bOnly,plugin,candidate (deepseek),c1-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,held-out-98,98,4,0.6958,0.6158,0.7758,313,303,388,count,-2.58,held-out ×4,,held-out confirmation
+26,27.30,v0,plugin,previous release 0.1.0,cf1,2026-11-11,deepseek-v4.1-flash,xhigh,2.1.319,held-out-174,174,2,0.727,0.647,0.823,75,75,100,percent,0.00,held-out ×2,,held-out confirmation; NI lower bound −3.16pp
+27,27.08,010,plugin,superseded by F2bOnly,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,0.718,0.619,0.858,65,64,82,count,-1.22,screen ×1,b,
+28,26.49,shell,plugin,control,s1c-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,2,0.7351,0.6482,0.8252,125,125,160,count,0.00,dev ×2,,
+29,25.11,K_verify,plugin,screen only,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.8238,0.6729,1.0229,20,22,28,count,7.14,screen ×1,,
+30,25.01,v1,plugin,rejected,ccb8,2026-11-10,deepseek-v4.1-flash,max,2.1.319,dev-97,97,2,0.739,,,75.8,74.7,100,percent,-1.00,dev ×2,,+10.5% vs v0
+31,24.87,v0,plugin,previous release 0.1.0,ccb7d,2026-11-09,deepseek-v4.1-flash,max,2.1.319,fixed-60,60,2,0.729,,,84.2,81.7,100,percent,-2.50,dev ×2,,
+32,24.20,K_synth_m1,plugin,screen only,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.6948,0.4229,1.0119,36,33,40,count,-7.50,screen ×1,e,10%-trimmed 0.61
+33,23.97,F2aOnly,plugin,not advanced,s1c-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,2,0.7664,0.687,0.8515,125,126,160,count,0.62,dev ×2,,
+34,23.31,v0,plugin,previous release 0.1.0,sc1-medium,2026-11-11,deepseek-v4.1-flash,medium,2.1.319,screen-30,30,1,0.732,0.597,0.895,22,21,30,count,-3.33,screen ×1,,vs medium-effort native
+35,23.01,111_m1,plugin,screen only,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.7057,0.4547,1.0624,36,33,40,count,-7.50,screen ×1,e,10%-trimmed 0.62
+36,23.00,100,plugin,not advanced,sc1,2026-11-11,deepseek-v4.1-flash,xhigh,2.1.319,screen-30,30,1,0.735,0.594,0.937,22,21,30,count,-3.33,screen ×1,,as abl-batchonly
+37,22.24,F2bOnly,plugin,candidate (deepseek),kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.6912,0.4439,1.014,36,32,40,count,-10.00,screen ×1,e,10%-trimmed 0.66
+38,22.20,styleEmpty,plugin,control,s1c-ds,2026-11-26,deepseek-v4.1-flash,max,2.1.323,dev-82,82,2,0.7596,0.6775,0.8436,127,124,162,count,-1.85,dev ×2,,
+39,21.02,F2bOnly,plugin,candidate (deepseek),kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.7503,0.6054,0.934,20,19,28,count,-3.57,screen ×1,,
+40,20.64,111,plugin,released 0.2.0,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,0.757,0.653,0.894,65,62,82,count,-3.66,screen ×1,b,released 0.2.0
+41,20.60,111,plugin,released 0.2.0,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.7543,0.6164,0.9118,20,19,28,count,-3.57,screen ×1,,released 0.2.0
+42,19.69,shell,plugin,control,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,0.766,0.657,0.906,65,62,82,count,-3.66,screen ×1,b,
+43,19.11,K_synth,plugin,screen only,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.7685,0.5856,1.0149,20,19,28,count,-3.57,screen ×1,,
+44,17.66,v0,plugin,previous release 0.1.0,sc1,2026-11-11,deepseek-v4.1-flash,xhigh,2.1.319,screen-30,30,1,0.786,0.63,0.968,22,21,30,count,-3.33,screen ×1,,
+45,15.65,K_v2_m1,plugin,screen only,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.7732,0.538,1.014,36,33,40,count,-7.50,screen ×1,e,10%-trimmed 0.63
+46,14.50,styleEmpty,plugin,control,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,0.855,0.737,0.979,65,65,82,count,0.00,screen ×1,b,
+47,13.54,100,plugin,not advanced,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,0.838,0.722,0.994,65,63,82,count,-2.44,screen ×1,b,
+48,10.35,v4-subagents,plugin,rejected,dt3,2026-11-10,deepseek-v4.1-flash,xhigh,2.1.319,fixed-60,60,2,0.964,0.637,1.542,78.3,84.2,100,percent,5.80,dev ×2,,+41.1% vs v0
+49,9.33,jCodeMunch,external,external,jcm3,2026-11-25,claude-opus-5-5,max,2.1.323,dev-82 (50 sampled),50,1,1.0499,0.8534,1.2858,38,44,50,count,12.00,screen ×1,,
+50,9.18,K_batch,plugin,screen only,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.8174,0.6137,1.0645,20,18,28,count,-7.14,screen ×1,,
+51,8.68,K_v2,plugin,screen only,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.8625,0.5448,1.1786,36,34,40,count,-5.00,screen ×1,e,10%-trimmed 0.65
+52,7.31,RTK,external,external,sc1,2026-11-11,deepseek-v4.1-flash,xhigh,2.1.319,screen-30,30,1,0.969,0.784,1.187,22,23,30,count,3.33,screen ×1,,
+53,5.92,styleEmpty,plugin,control,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.8467,0.6586,1.0393,20,18,28,count,-7.14,screen ×1,,
+54,5.65,K_lean_m1,plugin,screen only,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.8649,0.4913,1.3352,36,33,40,count,-7.50,screen ×1,e,10%-trimmed 0.59
+55,3.85,Polaris-topo,external,external,polaris-kimi,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,dev-82,82,1,0.946,0.8285,1.0836,62,61,82,count,-1.22,screen ×1,,
+56,0.90,DevSkills,external,external,sc1,2026-11-11,deepseek-v4.1-flash,xhigh,2.1.319,screen-30,30,1,1.036,0.827,1.299,22,23,30,count,3.33,screen ×1,,
+57,-2.15,111,plugin,released 0.2.0,kimi-w2,2026-11-27,kimi-k3.1-pro,xhigh,2.1.323,kimi-factorial-40,40,1,0.908,0.5442,1.3448,36,32,40,count,-10.00,screen ×1,e,10%-trimmed 0.72; released 0.2.0
+58,-2.76,K_explore,plugin,screen only,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,0.8735,0.6666,1.1161,20,17,28,count,-10.71,screen ×1,,
+59,-3.49,appendCost,config,not advanced,s1b-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,1.019,0.907,1.163,65,64,82,count,-1.22,screen ×1,b,
+60,-8.92,noAgent,config,not advanced,s1-haiku,2026-11-25,claude-haiku-5-5,max,2.1.323,dev-82,82,1,1.106,0.977,1.267,65,66,82,count,1.22,screen ×1,,
+61,-11.26,010,plugin,superseded by F2bOnly,sc1,2026-11-11,deepseek-v4.1-flash,xhigh,2.1.319,screen-30,30,1,1.062,0.632,1.919,22,21,30,count,-3.33,screen ×1,,as abl-nobatch
+62,-12.56,Polaris-cli,external,external,polaris-kimi,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,dev-82,82,1,1.0893,0.9032,1.3387,62,60,82,count,-2.44,screen ×1,,
+63,-13.88,H_m1,plugin,screen only,kimi-w1,2026-11-26,kimi-k3.1-pro,xhigh,2.1.323,kimi-screen-28,28,1,1.0249,0.7853,1.2987,20,18,28,count,-7.14,screen ×1,,
+64,-22.04,jCodeMunch,external,external,jcm2,2026-11-25,deepseek-v4.1-flash,max,2.1.323,30 tasks stratified by difficulty,30,1,1.1673,0.9807,1.4133,23,22,30,count,-3.33,screen ×1,,
+65,-22.93,TokenEconomizer,external,external,seq1,2026-11-10,deepseek-v4.1-flash,max,2.1.319,django-seq-61,61,2,1.206,1.035,1.415,84.4,82.8,100,percent,-1.60,dev ×2,g,
+66,-46.23,TokenEconomizer,external,external,terb,2026-11-25,deepseek-v4.1-flash,max,2.1.323,92 tasks in 6 repository streams,92,2,1.4327,1.2919,1.5977,148,145,184,count,-1.63,dev ×2,,
+67,-52.02,Polaris-topo,external,external,polaris-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,1.382,1.17,1.67,66,60,82,count,-7.32,screen ×1,,
+68,-73.16,ReasoningBank,external,external,terb,2026-11-25,deepseek-v4.1-flash,max,2.1.323,92 tasks in 6 repository streams,92,2,1.6614,1.5437,1.7913,148,142,184,count,-3.26,dev ×2,,
+69,-87.64,TokenEconomizer,external,external,opus-v2,2026-11-26,claude-opus-5-5,xhigh,2.1.323,dev-82 (30 in 3 repo streams),30,1,1.747,0.94,2.9,29,27,30,count,-6.67,screen ×1,f,same-channel 23 pairs: 0.943
+70,-183.48,ReasoningBank,external,external,opus-v2,2026-11-26,claude-opus-5-5,xhigh,2.1.323,dev-82 (30 in 3 repo streams),30,1,2.737,1.47,4.57,29,28,30,count,-3.33,screen ×1,f,same-channel 27 pairs: 1.765
+71,-249.00,Polaris-cli,external,external,polaris-ds,2026-11-25,deepseek-v4.1-flash,max,2.1.323,dev-82,82,1,3.49,2.91,4.26,66,66,82,count,0.00,screen ×1,,
+72,-445.72,Polaris-cli,external,external,opus-v2,2026-11-26,claude-opus-5-5,xhigh,2.1.323,dev-82 (30 in 3 repo streams),30,1,5.269,3.56,6.88,29,28,30,count,-3.33,screen ×1,f,same-channel 21 pairs: 3.401

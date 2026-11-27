@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {"type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/gate.sh\" baseline", "timeout": 15},
+          {"type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/env-facts.sh\"", "timeout": 15}
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {"type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/gate.sh\" stop", "timeout": 15}
+        ]
+      }
+    ]
+  }
+}

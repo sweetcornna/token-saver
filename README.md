@@ -70,9 +70,9 @@ All runs use SWE-bench Verified tasks, Claude Code 2.1.323 and one fresh session
 
 Results on other models, effort levels or task types are untested.
 
-## Experimental variants
+## Experiment library
 
-[`experiments/kimi-k3.1-pro/`](experiments/kimi-k3.1-pro/README.md) holds the ablation arms from the Kimi run and the M1 hook. The marketplace does not install them, and none of them replaces the released style.
+[`experiments/`](experiments/README.md) is a public record of every variant we tested: 33 of our own variants and 7 outside methods, 72 variant × run results from 24 runs, each with its tested files, run setup and outcome, and per-task data for the runs since 2026-11-25. Variants are ranked by a composite score, the saving in cost per resolved task against native Claude Code in the same run. The ranking is descriptive: it does not weigh how many runs or tasks stand behind a score, and no variant has established quality non-inferiority on held-out tasks. The marketplace does not install any of these variants, and none of them replaces the released style.
 
 ## References
 
@@ -108,7 +108,7 @@ MIT
 
 其他模型、推理强度或任务类型都还没有测过。
 
-### 实验变体与参考文献
+### 实验库与参考文献
 
-- Kimi 运行中的实验臂与 M1 hook 在 `experiments/kimi-k3.1-pro/`，marketplace 不安装，也不替换发布版本。
+- 实验库在 `experiments/`：全部 33 个自有消融版本与 7 个外部方法、72 条“版本 × 批次”结果，各版本附测试时的原样文件与成绩，按综合成绩（同批相对原生的每解出一题费用节省率）从高到低排列；2026-11-25 以来的 7 个批次附逐题数据。排名只作描述，不计样本量，也没有版本在留出题上证明质量不变差。marketplace 不安装这些版本，也不替换发布版本。
 - 设计和评测时参考的论文（附 DOI）见 `REFERENCES.md`，BibTeX 见 `references.bib`。

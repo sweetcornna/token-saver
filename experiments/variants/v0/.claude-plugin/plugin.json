@@ -1,0 +1,5 @@
+{
+  "name": "token-saver",
+  "version": "0.1.0",
+  "description": "Cuts coding-agent API cost without touching the conversation history: a fixed efficiency style (batch independent read-only steps, no re-reading unchanged output, stop once verified). Cache-safe: nothing is ever rewritten."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "token-saver",
+  "version": "0.2.0-s1b.styleEmpty",
+  "description": "s1b ablation arm: output style with heading only (no instruction text). Experiment build, not a release.",
+  "author": {
+    "name": "token_reduc"
+  }
+}

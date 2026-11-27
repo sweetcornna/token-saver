@@ -1,0 +1,1 @@
+Every tool call re-sends the whole conversation, so the number of round trips drives the cost of a task. Work the same way you normally would.

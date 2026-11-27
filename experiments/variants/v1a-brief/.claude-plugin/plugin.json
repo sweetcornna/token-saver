@@ -1,0 +1,5 @@
+{
+  "name": "token-saver-brief",
+  "version": "0.1.0",
+  "description": "Candidate v1a: a fixed output style that asks for brief internal reasoning and acting once a plausible plan exists. Thinking tokens are about half of the cost with reasoning models at high effort."
+}

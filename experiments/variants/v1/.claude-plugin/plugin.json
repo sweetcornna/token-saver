@@ -1,0 +1,5 @@
+{
+  "name": "token-saver-v1",
+  "version": "0.2.0",
+  "description": "token-saver v0 plus a final check that the fix covers the related cases the issue implies. Same cache-safe design: only the system prompt changes."
+}

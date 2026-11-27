@@ -1,0 +1,8 @@
+<repository-notes>
+Notes learned from earlier sessions in this repository and environment. They may be incomplete; verify before relying on them.
+- No network access: pip download, curl, git ls-remote, and urllib all fail DNS. Do not attempt to fetch other sympy versions or upstream history.
+- pytest is not installed and sympy.testing.runtests is not importable. Run tests with `python bin/test <path>` or `sympy.test('<path>')`; doctests with `python bin/doctest <file>`.
+- Repository history is shallow/limited; the fix commit is not reachable. Don't spend many steps on `git fsck`, `git log --all`, tags, or packages in /opt looking for future fixes.
+- Before running a large test directory, run the specific test files of related modules first; broad sympy test runs like sympy/functions or sympy/matrices take many minutes.
+- Verify regressions using `python bin/test <module>/tests` and by comparing baseline (git stash) vs patched failure counts; some failures are pre-existing.
+</repository-notes>

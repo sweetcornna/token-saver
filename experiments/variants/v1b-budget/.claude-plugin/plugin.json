@@ -1,0 +1,5 @@
+{
+  "name": "token-saver-budget",
+  "version": "0.1.0",
+  "description": "Candidate v1b: counts tool calls per session and, at 50 and 90 calls, appends a fixed note to the tool result asking to finish if the fix is verified or to take the single most informative next step. Append-only, so the cached prefix is untouched."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "token-saver-exp",
+  "version": "0.1.0",
+  "description": "token-saver v0 (fixed efficiency style) plus repository notes learned from earlier sessions, injected once at session start so the cached prompt prefix stays intact."
+}

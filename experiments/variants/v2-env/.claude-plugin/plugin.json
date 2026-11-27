@@ -1,0 +1,5 @@
+{
+  "name": "token-saver",
+  "version": "0.3.0-env.1",
+  "description": "token-saver 0.3.0 plus the optional environment-facts part: a few project facts (config files, test entry points, tool versions) detected by a script and injected once when the session starts. For evaluation; not the default deliverable."
+}

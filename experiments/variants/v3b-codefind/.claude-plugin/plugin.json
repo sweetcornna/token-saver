@@ -1,0 +1,5 @@
+{
+  "name": "token-saver",
+  "version": "0.5.0",
+  "description": "token-saver v0 plus a read-only code search helper (POSIX sh + grep + awk) that prints each match inside its enclosing function or class, grouped by file, in one call (dt2 variant v3b)."
+}

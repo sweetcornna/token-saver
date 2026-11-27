@@ -1,0 +1,14 @@
+<repository-notes>
+Notes learned from earlier sessions in this repository and environment. They may be incomplete; verify before relying on them.
+- Earlier sessions here were recorded as plain-text logs with timestamps in UTC.
+- Each session record lists the commands that were run and the files that were opened or edited.
+- Records are kept for bookkeeping only and are not summarized or ranked.
+- The format of these records has stayed the same across earlier sessions.
+- Older records are kept next to newer ones without being changed.
+- Records are stored in the order in which the sessions ended.
+- None of these records refers to the current task.
+- This block is regenerated from the stored records before a session starts.
+- Each record is identified by the time at which its session started.
+- Records from different days are kept in the same list.
+- The list has no fixed maximum length and grows as sessions end.
+</repository-notes>

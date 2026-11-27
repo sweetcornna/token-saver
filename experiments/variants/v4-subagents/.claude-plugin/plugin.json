@@ -1,0 +1,5 @@
+{
+  "name": "token-saver",
+  "version": "0.6.0",
+  "description": "token-saver v0 (efficiency style) plus adaptive effort: the main conversation keeps its model and effort and hands searching, reading and running commands to lower-effort helper agents on the same model, which report back briefly. Nothing in the history is rewritten."
+}
