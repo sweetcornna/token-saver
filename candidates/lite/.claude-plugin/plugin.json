@@ -1,0 +1,9 @@
+{
+  "name": "token-saver",
+  "version": "0.2.0-lite",
+  "description": "Test candidate: the 0.2.0 output style with only its heading line, no instruction text. Not the marketplace release.",
+  "author": {
+    "name": "token-saver contributors"
+  },
+  "license": "MIT"
+}

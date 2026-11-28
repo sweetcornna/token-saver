@@ -6,6 +6,8 @@ A Claude Code plugin that cuts API cost on coding tasks by reducing round trips.
 
 中文说明见下方。
 
+**Test candidates (2026-11-28):** three versions for side-by-side testing (0.2.0, `lite`, `kv2`) are in [`candidates/`](candidates/README.md), with install and test steps. On claude-sonnet-5-5, `lite` and `kv2` passed a pre-registered cost-and-quality check on held-out tasks. 测试候选见 [`candidates/`](candidates/README.md)。
+
 ## What it does
 
 The style keeps Claude Code's default coding instructions (`keep-coding-instructions: true`) and is applied whenever the plugin is enabled (`force-for-plugin: true`). It adds four habits:
@@ -38,6 +40,8 @@ All runs use SWE-bench Verified tasks, Claude Code 2.1.323 and one fresh session
 
 | Model (effort) | Run | Tasks × runs | Arm | Cost vs. native (95% CI) | Resolved, native → arm |
 |---|---|---|---|---|---|
+| claude-sonnet-5-5 (`xhigh`) | 2026-11-28 held-out confirmation | 98 × 3 | `lite` (heading only) | 0.724 (0.648–0.816) | 264/294 → 264/294 |
+| claude-sonnet-5-5 (`xhigh`) | same run | 98 × 3 | `kv2` | 0.713 (0.626–0.827) | 264/294 → 261/294 |
 | claude-haiku-5-5 (`max`) | 2026-11-25 paired | 81 × 1 | this plugin (0.2.0) | 0.590 (0.537–0.652) | 64/81 → 66/81 |
 | deepseek-v4.1-flash (`max`) | 2026-11-26 held-out confirmation | 98 × 4 | closing habit only (`F2bOnly`) | 0.696 (0.616–0.776) | 80.7% → 78.1% |
 | kimi-k3.1-pro (`xhigh`) | 2026-11-26 factorial | 40 × 1 | this plugin (0.2.0) | 0.908 (0.5442–1.3448); 10%-trimmed 0.7151 | 36/40 → 32/40 |

@@ -1,0 +1,9 @@
+{
+  "name": "token-saver",
+  "version": "0.3.0-rc.kv2",
+  "description": "Test candidate K_v2: 0.2.0 batching habits plus focus rules (targeted search, no git-history digging, targeted tests). Not the marketplace release.",
+  "author": {
+    "name": "token-saver contributors"
+  },
+  "license": "MIT"
+}
